@@ -1,17 +1,17 @@
+/* header e footer: classe auxiliar */
+.content-space{
+    width: 1130px;
+    max-width: 1130px;
+    margin: 0 auto !important;
+}
+
 /* HEADER: LOGO - MENU - CARRINHO */
-
-/* .container-header{
-
-} */
-
 .nav-menu{
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     padding: 15px;
-    /* Só pra testar o header */
-    /* background: #C8C8C8;  */
 }
 
 .logo-header img{
@@ -33,6 +33,7 @@
     width: 15px;
 }
 
+
 /* HEADER: HOME - SOBRE - SEARCH */
 .container-nav-header{
     height: 80px;
@@ -40,20 +41,15 @@
     box-sizing: border-box;
     background: #1D3D73;
     display: flex;
-    position: relative;
+    width: 100%;
 }
 
 .nav-header{
-    margin-left: 20px;
+    padding: 20px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    
-}
-
-.home-sobre{
-    position: absolute;
-    left: 0%;
-    padding-left: 30px;
+    width: 100%; 
 }
 
 .nav-header a {
@@ -61,12 +57,6 @@
     font-weight: 400;
     margin-right: 15px;
     color: #FFFFFF;
-}
-
-.search{
-    position: absolute;
-    right: 0%;
-    margin-right: 15px;
 }
 
 .search input{
@@ -83,9 +73,14 @@
 
 /* MAIN: VITRINE */
 
+main{
+    max-width: 930px;
+    margin: 0 auto !important;
+}
+
 #titulo-vitrine{
-    padding-left: 30px;
-    padding-top: 15px;;
+    padding-left: 60px;
+    padding-top: 15px;
     margin: 35px 0 25px;
     font-weight: bold;
     text-align: left;
@@ -131,32 +126,32 @@ div a {
 
 /* FOOTER: TRABALHE, CONTATE, ETC*/
 
-.container-footer-information{
+.container-footer{
     background: #1D3D73;
     height: 130px;
     display: flex;
-    justify-content: left;
     align-items: center;
-    position: relative;
     padding-left: 15px;
     box-sizing: border-box;
+    width: 100%;
+}
+
+.footer-information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .container-box a{
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 0.85em;
     display: flex;
-    justify-content: left;
-    align-items: center;
+    /* justify-content: left; */
+    /* align-items: center; */
     margin-bottom: 10px;
 }
 
-.cartoes {
-    position: absolute;
-    right: 0%;
-    padding-right: 15px;
-}
 
 /* FOOTER: COPYRIGHT*/
 
